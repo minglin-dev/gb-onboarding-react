@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .App-logo {
@@ -24,8 +25,78 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-grid-menu {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px 20px;
+  padding: 0 20px;
+}
+
+.App-grid-menu li {
+  background-color: #424ea6;
+  color: white;
+  padding: 15px 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 3px #424ea610;
+}
+
+.App-tool-bar {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  justify-content: space-between;
+}
+
+.App-title {
+  color: #283154;
+  font-weight: 700;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.App-indicator-container {
+  display: flex;
+  align-items: center;
+}
+
+.App-indicator {
+  height: 8px;
+  width: 8px;
+  margin: 0 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.App-indicator-selected {
+  height: 12px;
+  width: 12px;
+  margin: 0 3px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #283154;
+}
+
+button {
+  background-color: transparent;
+  font-weight: 700;
+  font-size: medium;
+  outline: none;
+  border: none;
+}
+
+.button-primary {
+  color: #424ea6;
+}
+
+.button-gray {
+  color: #c0c0c0;
+}
+
+.space-regular {
+  margin: 20px;
 }
 
 @keyframes App-logo-spin {
